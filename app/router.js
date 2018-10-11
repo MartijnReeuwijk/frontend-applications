@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('risicoanalyse');
+  this.route('mainnav');
 });
 
 export default Router;

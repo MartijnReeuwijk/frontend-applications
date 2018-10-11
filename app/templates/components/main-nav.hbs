@@ -1,0 +1,18 @@
+{{!-- <h2>{{title}}</h2>
+<p>Yea boi</p> --}}
+<nav>
+  <div>
+    <div class="logo">
+    </div>
+  </div>
+  <ul>
+    {{#each navItem as |navItem|}}
+
+    <li {{action "actionNav" navItem}} class="navItem">{{navItem}}</li>
+
+    {{/each}}
+  </ul>
+</nav>
+
+
+{{yield}}
