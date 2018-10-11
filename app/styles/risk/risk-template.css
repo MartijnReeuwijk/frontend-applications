@@ -1,0 +1,39 @@
+.riskTemplate{
+  width: 400px;
+  height: 100%;
+  border-radius: 5px;
+  padding: 20px 10px;
+  background-color: #F9FAFA;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+}
+.riskTemplate h2{
+ font-size: 50px;
+ margin: 20px;
+}
+.riskTemplate p:first-of-type{
+  border-bottom: solid 1px #2D4C61;
+}
+.riskMajorCauseCss{
+
+}
+.secondOpinion{
+  bottom: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.secondOpinion button{
+  width: calc(100% - 10px);
+  color: white;
+  max-width: 300px;
+  height: 50px;
+  background-color: #6DA6C5;
+  border-radius: 5px;
+  border: none;
+}
+.secondOpinion button:hover{
+  background-color: #a4c7db;
+}

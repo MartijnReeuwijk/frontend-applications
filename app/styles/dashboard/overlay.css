@@ -1,0 +1,26 @@
+.overlay{
+  display: block;
+  position: fixed;
+  width: 70%;
+  max-height: 700px;
+  height: 500px;
+  background-color: white;
+  top: 250px;
+  left:0 ;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 10px;
+}
+.overlayShadow{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.displayNone{
+  display: none;
+}

@@ -1,0 +1,13 @@
+.templateHolder{
+  padding: 20px;
+    width: calc(100% - 340px);
+    float: left;
+}
+.dashboard{
+  width: 100%;
+  min-height: 700px;
+  height: auto;
+  padding: 10px;
+  background-color: orange;
+  display: flex;
+}
