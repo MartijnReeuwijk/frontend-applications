@@ -5,10 +5,16 @@
     <div class="logo">
     </div>
   </div>
+  <h1>Risk analysis</h1>
+
   <ul>
     {{#each navItem as |navItem|}}
 
-    <li {{action "actionNav" navItem}} class="navItem">{{navItem}}</li>
+      <li {{action "actionNav" navItem}} class="navItem">
+        <p class="easeAnime">
+          {{navItem}}
+        </p>
+      </li>
 
     {{/each}}
   </ul>
