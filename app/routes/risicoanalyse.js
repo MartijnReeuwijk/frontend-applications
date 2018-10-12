@@ -2,10 +2,10 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
   model(){
-    return data
+    return data;
   }
 });
-// Dit moet anders maar is nu een Testo
+
 var data = [
   {
     "Coefficients": "",

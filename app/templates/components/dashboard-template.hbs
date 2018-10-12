@@ -53,8 +53,10 @@
   </select>
   </div>
 
-  {{#each data key="Name" as |data|}}
-  <li>{{data.Name}}</li>
+  {{#each data as |data|}}
+      <p>
+        {{data.Name}}
+      </p>
   {{/each}}
 
 
