@@ -1,9 +1,9 @@
 import Component from '@ember/component';
-
+// Dit anders
 export default Component.extend({
-  actions: {
-    actionNav(item) {
-      alert(item);
-    }
+  willRender() {
+    $.getJSON('/assets/json/data.json').then(data => {
+      this.set('data', data);
+    });
   }
 });
