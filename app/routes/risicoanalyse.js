@@ -1,12 +1,22 @@
 import Route from '@ember/routing/route';
-
-export default Route.extend({
-  model(){
-    return data;
-  }
-});
-
 var data = [
+  {
+    herkomst: [
+      {
+        "Coefficients": "Herkomst ouders: Beide ouders niet Nederlands",
+        "Categorie": "Herkomst",
+        "Name": "Beide ouders niet Nederlands",
+        "Gewicht": "0,16972"
+      },
+      {
+        "Coefficients": "Herkomst ouders: Een van de ouders Nederlands en de andere niet Nederlands",
+        "Categorie": "Herkomst",
+        "Name": "Een van de ouders Nederlands en de andere niet Nederlands",
+        "Gewicht": "-0,08943"
+      },
+    ]
+  },
+
   {
     "Coefficients": "",
     "Categorie": "Intercept",
@@ -18,18 +28,6 @@ var data = [
     "Categorie": "Geslacht",
     "Name": "Man",
     "Gewicht": "-0,12611"
-  },
-  {
-    "Coefficients": "Herkomst ouders: Beide ouders niet Nederlands",
-    "Categorie": "Herkomst",
-    "Name": "Beide ouders niet Nederlands",
-    "Gewicht": "0,16972"
-  },
-  {
-    "Coefficients": "Herkomst ouders: Een van de ouders Nederlands en de andere niet Nederlands",
-    "Categorie": "Herkomst",
-    "Name": "Een van de ouders Nederlands en de andere niet Nederlands",
-    "Gewicht": "-0,08943"
   },
   {
     "Coefficients": "Type huishouden: Eenouderhuishouden",
@@ -344,3 +342,11 @@ var data = [
     "Gewicht": "-13,03162"
   }
 ]
+
+export default Route.extend({
+  model(){
+    console.log(data);
+
+    return data;
+  }
+});

@@ -16,48 +16,35 @@
 {{!-- Kill me nameing --}}
 <div class="dashboardRiskOptionsHolder">
 
+  {{!-- {{#each data as |data|}}
   <div class="riskOptionsHolder">
-    <p>Geslacht Kind:</p>
-    <select>
-      <option selected>Man</option>
-      <option>Vrouw</option>
-  </select>
+    <p>{{data.Categorie}}</p>
+    <select class="" name="">
+      {{#each data.herkomst as |herkomst|}}
+      <option data-weight="{{data.herkomst.Gewicht}}" name="{{data.herkomst.Name}}"></option>
+      {{/each}}
+    </select>
   </div>
+  {{/each}} --}}
 
+  {{!-- {{#each data as |data|}} --}}
   <div class="riskOptionsHolder">
-    <p>Leeftijd Kind:</p>
-    <input type="number" name="" value="">
-  </div>
+    <p>{{data.Name}}</p>
 
-  <div class="riskOptionsHolder">
-    <p>Geslacht:</p>
-    <select>
-      <option selected>Man</option>
-      <option>Vrouw</option>
-  </select>
-  </div>
+    <select class="" name="">
 
-  <div class="riskOptionsHolder">
-    <p>Geslacht:</p>
-    <select>
-      <option selected>Man</option>
-      <option>Vrouw</option>
-  </select>
-  </div>
+      {{#each data.[0].herkomst as |herkomst|}}
+      <option data-weight="{{data.Gewicht}}" name="{{data.[0].herkomst.[0].Name}}">
+        {{herkomst.Name}}
+      </option>
 
-  <div class="riskOptionsHolder">
-    <p>Geslacht:</p>
-    <select>
-      <option selected>Man</option>
-      <option>Vrouw</option>
-  </select>
+      {{/each}}
+    </select>
   </div>
+  {{!-- {{/each}} --}}
 
-  {{#each data as |data|}}
-      <p>
-        {{data.Name}}
-      </p>
-  {{/each}}
+  {{!-- <p>{{data.[0].herkomst.[0].Name}}</p>
+  <p>{{data.[0].herkomst}}</p> --}}
 
 
 </div>
