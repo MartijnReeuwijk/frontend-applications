@@ -28,7 +28,10 @@
   {{/each}} --}}
 
   {{!-- {{#each data as |data|}} --}}
-  <div class="riskOptionsHolder">
+
+{{!-- Werkt deels --}}
+
+  {{!-- <div class="riskOptionsHolder">
     <p>{{data.Name}}</p>
 
     <select class="" name="">
@@ -41,7 +44,24 @@
       {{/each}}
     </select>
   </div>
-  {{!-- {{/each}} --}}
+  {{/each}}--}}
+
+  {{#each data as |loop1|}}
+  <div class="riskOptionsHolder">
+    {{#each data.[0].Voortijdigschoolverlaten as |herkomst|}}
+    <p>{{herkomst.Name}}</p>
+  {{/each}}
+    <select class="" name="">
+      {{#each data.[0].herkomst as |herkomst|}}
+      <option data-weight="{{data.Gewicht}}" name="{{data.[0].herkomst.[0].Name}}">
+        {{herkomst.Name}}
+      </option>
+      {{/each}}
+    </select>
+  </div>
+  {{/each}}
+
+
 
   {{!-- <p>{{data.[0].herkomst.[0].Name}}</p>
   <p>{{data.[0].herkomst}}</p> --}}

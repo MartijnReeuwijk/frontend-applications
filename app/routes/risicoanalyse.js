@@ -1,22 +1,39 @@
 import Route from '@ember/routing/route';
-var data = [
-  {
-    herkomst: [
-      {
-        "Coefficients": "Herkomst ouders: Beide ouders niet Nederlands",
-        "Categorie": "Herkomst",
-        "Name": "Beide ouders niet Nederlands",
-        "Gewicht": "0,16972"
-      },
-      {
-        "Coefficients": "Herkomst ouders: Een van de ouders Nederlands en de andere niet Nederlands",
-        "Categorie": "Herkomst",
-        "Name": "Een van de ouders Nederlands en de andere niet Nederlands",
-        "Gewicht": "-0,08943"
-      },
-    ]
-  },
+// var data = [{
+//       type: [{
+// vraag: [{
+//   "vraag": "VSV Niet van toepassing"
+//             option: [
+//
+//               {
+//                 "Coefficients": "VSV Niet van toepassing",
+//                 "Name": "Niet van toepassing",
+//                 "Gewicht": "0,38736"
+//               },
+//               {
+//                 "Coefficients": "VSV Geen data over VSV bekend",
+//                 "Name": "Onbekend",
+//                 "Gewicht": "0,80564"
+//               },
+//               {
+//                 "Coefficients": "VSV Geen vsv: uit onderwijs met startkwalificatie",
+//                 "Name": "Uit onderwijs met startkwalificatie",
+//                 "Gewicht": "-13,64193"
+//               },
+//               {
+//                 "Coefficients": "VSV Voortijdig schoolverlater (vsv)",
+//                 "Name": "Voortijdig schoolverlaten",
+//                 "Gewicht": "0,34684"
+//               },
+//             ]
+// },
+//
+//           },
+//         ]
+//       },
+// ]
 
+var data = [
   {
     "Coefficients": "",
     "Categorie": "Intercept",
@@ -26,8 +43,20 @@ var data = [
   {
     "Coefficients": "GESLACHT Mannen",
     "Categorie": "Geslacht",
-    "Name": "Man",
+    "Name": "test",
     "Gewicht": "-0,12611"
+  },
+  {
+    "Coefficients": "Herkomst ouders: Beide ouders niet Nederlands",
+    "Categorie": "Herkomst",
+    "Name": "Beide ouders niet Nederlands",
+    "Gewicht": "0,16972"
+  },
+  {
+    "Coefficients": "Herkomst ouders: Een van de ouders Nederlands en de andere niet Nederlands",
+    "Categorie": "Herkomst",
+    "Name": "Een van de ouders Nederlands en de andere niet Nederlands",
+    "Gewicht": "-0,08943"
   },
   {
     "Coefficients": "Type huishouden: Eenouderhuishouden",
@@ -341,11 +370,48 @@ var data = [
     "Name": "Vwo, Wo bachelor en Wo master",
     "Gewicht": "-13,03162"
   }
-]
+];
+
+var data_prepped = [];
+for (var i = 0; i < data.length; i++) {
+
+  var new_cat = true;
+  for (var j = 0; j < data_prepped.length; j++) {
+    if (data_prepped[j].Categorie === data[i].Categorie) {
+      new_cat = false;
+    }
+  }
+
+  if (new_cat) {
+    data_prepped.push({
+      'Categorie': data[i].Categorie,
+      'Antwoorden': []
+    });
+  }
+
+  for (var j = 0; j < data_prepped.length; j++) {
+    if (data_prepped[j].Categorie === data[i].Categorie) {
+      data_prepped[j].Antwoorden.push({
+        'Coefficients': data[i].Coefficients,
+        'Name': data[i].Name,
+        'Gewicht': data[i].Gewicht,
+      });
+    }
+  }
+}
+
+// var tmp = [
+// {
+//   categorie: '',
+//   vragen: [{}]
+// }
+// ];
+
 
 export default Route.extend({
-  model(){
+  model() {
     console.log(data);
+    console.log(data_prepped);
 
     return data;
   }
