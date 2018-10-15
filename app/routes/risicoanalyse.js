@@ -1,38 +1,4 @@
 import Route from '@ember/routing/route';
-// var data = [{
-//       type: [{
-// vraag: [{
-//   "vraag": "VSV Niet van toepassing"
-//             option: [
-//
-//               {
-//                 "Coefficients": "VSV Niet van toepassing",
-//                 "Name": "Niet van toepassing",
-//                 "Gewicht": "0,38736"
-//               },
-//               {
-//                 "Coefficients": "VSV Geen data over VSV bekend",
-//                 "Name": "Onbekend",
-//                 "Gewicht": "0,80564"
-//               },
-//               {
-//                 "Coefficients": "VSV Geen vsv: uit onderwijs met startkwalificatie",
-//                 "Name": "Uit onderwijs met startkwalificatie",
-//                 "Gewicht": "-13,64193"
-//               },
-//               {
-//                 "Coefficients": "VSV Voortijdig schoolverlater (vsv)",
-//                 "Name": "Voortijdig schoolverlaten",
-//                 "Gewicht": "0,34684"
-//               },
-//             ]
-// },
-//
-//           },
-//         ]
-//       },
-// ]
-
 var data = [
   {
     "Coefficients": "",
@@ -400,7 +366,8 @@ for (var i = 0; i < data.length; i++) {
   }
 }
 
-// var tmp = [
+// template resultaat
+// var template = [
 // {
 //   categorie: '',
 //   vragen: [{}]
@@ -412,7 +379,6 @@ export default Route.extend({
   model() {
     console.log(data);
     console.log(data_prepped);
-
-    return data;
+    return data_prepped;
   }
 });
