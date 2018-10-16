@@ -20,7 +20,7 @@
 
   <div class="riskOptionsHolder">
     <p>{{data.Categorie}}</p>
-    <select class="questionHolder" name="">
+    <select class="questionHolder" name="" onchange="get_weight()">
       {{#each data.Antwoorden as |antwoord|}}
       <option data-weight="{{antwoord.Gewicht}}" class="getWeight" name="{{antwoord.Name}}">
         {{antwoord.Name}}
