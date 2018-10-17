@@ -3,13 +3,17 @@ console.log("yeboi");
 function get_weight() {
   var get_weight = document.querySelectorAll('.questionHolder option:checked');
   var total_weight = 0;
+
   for (var i = 0; i < get_weight.length; i++) {
-    let weight = get_weight[i].getAttribute('data-weight');
+    var weight = get_weight[i].getAttribute('data-weight');
     var to_number = parseFloat(weight, 10);
     total_weight += to_number;
-    // var total_weight = Math.ceil(total_weight);
+    var total_weight = Math.ceil(total_weight);;
+    // var total_weight = total_weight;
+    // Math.ceil(total_weight);
     get_high_risk_factor(to_number);
   }
+  console.log(total_weight);
   get_risk(total_weight, 0);
 }
 
@@ -20,6 +24,7 @@ function get_risk(X, Y) {
   if (risk > 0) {
     animate_value('riskPlace', 0, risk, 1000);
   }
+
   else {
     animate_value('riskPlace', 0, 1, 1000);
   }
@@ -55,7 +60,7 @@ function percent_color(percent) {
   var risk_place = document.getElementById('riskPlace');
   var riskValue = document.getElementById('riskValue');
   var red = "#ec3b51";
-  var blue = "#5278b5";
+  var blue = "#259E89";
   if (percent > 45) {
     risk_place.style.color = red
     riskValue.style.color = red

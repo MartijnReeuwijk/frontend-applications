@@ -21,7 +21,7 @@ display: flex;
 transform: rotate(-180deg);
 width: 100%;
 max-width: 100px;
-height: calc(100% - 20px);
+height: 750px;
 margin: 10px;
 
 background-color: #e6e6e6;
@@ -38,6 +38,7 @@ position: relative;
   width: 150%;
   height: 25px;
   line-height: 25px;
+
   background-color: white;
   position: absolute;
   bottom: 0;
@@ -57,6 +58,11 @@ position: relative;
   line-height: 50px;
   text-align: center;
   position: relative;
+  display: table;
+}
+.riskTemplateCenter{
+  display: table-cell;
+  vertical-align: middle;
 }
 .riskTemplate h2{
  font-size: 50px;
