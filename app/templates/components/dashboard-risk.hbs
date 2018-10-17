@@ -1,15 +1,35 @@
-<div class="riskTemplate">
-  <h2 id="riskPlace">0%</h2>
-  <p id="riskValue">Low risk</p>
+<section class="riskHolder">
 
-  <p class="riskMajorCauseCss riskMajorCauseJs">Ouders Gescheiden</p>
-  <p class="riskMajorCauseCss riskMajorCauseJs">Ouders Gescheiden</p>
+  <div class="barHolder">
+    <div class="progressbarHolder">
+      <span id="progress" style="height:0%;"  class="progressAnime">
+        <span class="shadowBox">75%</span>
+      </span>
 
-  <div class="secondOpinion">
-    <button type="button" class="easeAnime" name="button">
-      Vraag second opinion
-    </button>
+    </div>
   </div>
 
-</div>
+
+
+  <div class="riskTemplate">
+    <h2 id="riskPlace">0%</h2>
+    <p id="riskValue">Low risk</p>
+
+    <p class="riskMajorCauseCss riskMajorCauseJs">Ouders Gescheiden</p>
+    <p class="riskMajorCauseCss riskMajorCauseJs">Ouders Gescheiden</p>
+
+  </div>
+</section>
+
+  <div class="secondOpinion">
+    <div class="secondOpinionCenter">
+      <button type="button" class="easeAnime" name="button">
+        Totaal analyse
+      </button>
+      <button type="button" class="easeAnime" name="button">
+        Vraag second opinion
+      </button>
+    </div>
+
+  </div>
 {{yield}}

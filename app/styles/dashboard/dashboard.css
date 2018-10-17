@@ -8,7 +8,7 @@
   min-height: 700px;
   height: auto;
   padding: 10px;
-  background-color: orange;
+  /* background-color: orange; */
   display: flex;
 }
 .optionHolder{

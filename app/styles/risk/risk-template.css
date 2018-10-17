@@ -1,9 +1,58 @@
+.riskHolder{
+  display: flex;
+  height: calc(100vh - 200px);
+  min-height: 400px;
+  background-color: white;
+  position: relative;
+
+}
+.barHolder{
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+.progressbarHolder{
+display: flex;
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+width: 100%;
+max-width: 100px;
+height: calc(100% - 20px);
+margin: 10px;
+
+background-color: #e6e6e6;
+
+
+}
+#progress{
+  /* height: 100%; */
+  width: 100%;
+margin: 10 auto;
+position: relative;
+}
+#progress > span {
+  width: 150%;
+  height: 25px;
+  line-height: 25px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: -25%;
+  text-align: center;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .riskTemplate{
   width: 400px;
   height: 100%;
   border-radius: 5px;
   padding: 20px 10px;
-  background-color: #F9FAFA;
+  /* background-color: #F9FAFA; */
   font-size: 25px;
   line-height: 50px;
   text-align: center;
@@ -20,20 +69,36 @@
 
 }
 .secondOpinion{
-  bottom: 10px;
+  /* bottom: 10px;
   position: absolute;
   left: 0;
-  right: 0;
+  right: 0; */
+}
+.secondOpinionCenter{
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
 }
 .secondOpinion button{
   width: calc(100% - 10px);
   color: white;
   max-width: 300px;
   height: 50px;
-  background-color: #6DA6C5;
-  border-radius: 5px;
+  background-color: #5278b5;
   border: none;
 }
 .secondOpinion button:hover{
-  background-color: #a4c7db;
+  background-color: #6DA6C5;
+}
+
+
+
+
+.progressAnime
+{
+    -webkit-transition: height 500ms cubic-bezier(.420, .000, .580, 1.000);
+       -moz-transition: height 500ms cubic-bezier(.420, .000, .580, 1.000);
+         -o-transition: height 500ms cubic-bezier(.420, .000, .580, 1.000);
+            transition: height 500ms cubic-bezier(.420, .000, .580, 1.000);
+    /* ease-in-out */
 }
