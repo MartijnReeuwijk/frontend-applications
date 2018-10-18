@@ -1,91 +1,88 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  }
-nav
-{
-    position: relative;
+* {
+  box-sizing: border-box;
 
-    float: left;
-
-    width: 300px;
-    height: 100vh;
-
-    color: #e6e6e6;
-    background-color: #5278b5;
+  font-family: 'Roboto', sans-serif;
 }
 
-nav div
-{
-    position: relative;
-    color: #e6e6e6;
+nav {
+  position: relative;
 
-    width: 100%;
-    height: 200px;
-    margin: 0 auto;
+  float: left;
+
+  width: 300px;
+  height: 100vh;
+
+  color: #e6e6e6;
+  background-color: #5278b5;
 }
 
-nav h1
-{
-    font-size: 40px;
+nav div {
+  position: relative;
 
-    width: 100%;
-    margin: 5% 0;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
 
-    text-align: center;
+  color: #e6e6e6;
 }
 
-.logo
-{
-    background-image: url('/assets/images/logo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+nav h1 {
+  width: 100%;
+  margin: 5% 0;
+
+  text-align: center;
+
+  font-size: 40px;
 }
 
-.navItem
-{
-    font-size: 25px;
-    line-height: 50px;
-    width: 90%;
-    height: 50px;
-    margin: 15px 0;
-    padding: 0 5%;
-
-    text-align: center;
-
-    background-color: transparent;
+.logo {
+  background-image: url('/assets/images/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.navItem p:hover
-{
-    border-bottom: 1px solid white;
+.navItem {
+  width: 90%;
+  height: 50px;
+  margin: 15px 0;
+  padding: 0 5%;
+
+  text-align: center;
+
+  background-color: transparent;
+
+  font-size: 25px;
+  line-height: 50px;
 }
 
-.navItem p
-{
-    border-bottom: 1px solid transparent;
+.navItem p:hover {
+  border-bottom: 1px solid white;
 }
-.topNav{
+
+.navItem p {
+  border-bottom: 1px solid transparent;
+}
+
+.topNav {
   width: 100%;
   height: 60px;
+
   background-color: #5278b5;
-
-}
-.easeAnime:hover
-{
-    -webkit-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
-       -moz-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
-         -o-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
-            transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
-    /* ease-in-out */
 }
 
-.easeAnime
-{
-    -webkit-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
-       -moz-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
-         -o-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
-            transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
-    /* ease-in-out */
+.easeAnime:hover {
+  -webkit-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
+  -moz-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
+  -o-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
+  transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
+  /* ease-in-out */
+}
+
+.easeAnime {
+  -webkit-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
+  -moz-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
+  -o-transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
+  transition: all 250ms cubic-bezier(.420, .000, .580, 1.000);
+  /* ease-in-out */
 }
