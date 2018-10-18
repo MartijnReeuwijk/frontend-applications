@@ -125,16 +125,19 @@ Ook heb ik een front keuze page gemaakt waar de gebruiker kan kiezen tussen vers
 Tijdens het ontwikkelen ben ik een aantal kleinen problemen tegen gekomen. Hier vertel ik hoe ik deze heb opgelost.
 
 # HTML progessbar
-Voor mijn design heb ik een progress bar die de procentuele kans aangeeft om dit effect tebereiken dacht ik het element ```<progress></progress>``` tegebruiken. Helaas gaf dit niet het gewilde resultaat. De HTML progress bar kan je bijna / niet aanpassen met CSS. Hier door heb ik wat onderzoek gedaan en dat gaf aan dat je het met een ```span``` moest doen. Ik manipuleer de inline height van het element om zo het juiste resultaat tegeven.
+Voor mijn design heb ik een progress bar die de procentuele kans aangeeft om dit effect tebereiken dacht ik het element `<progress></progress>` tegebruiken. Helaas gaf dit niet het gewilde resultaat. De HTML progress bar kan je bijna / niet aanpassen met CSS. Hier door heb ik wat onderzoek gedaan en dat gaf aan dat je het met een ```span``` moest doen. Ik manipuleer de inline height van het element om zo het juiste resultaat tegeven.
 Zie resultaat hier onder.
-```  <div class="barHolder">
+ `   <div class="barHolder">
     <div class="progressbarHolder">
       <span id="progress" style="height:0%;"  class="progressAnime">
         <span class="shadowBox">0%</span>
       </span>
     </div>
-  </div>```
+  </div>`
   
-  Nu zie ik in dat als ik aan het begin meer onderzoek had gedaan naar het juiste element had ik hier tijd kunnen besparen.
-  
+Nu zie ik in dat als ik aan het begin meer onderzoek had gedaan naar het juiste element had ik hier tijd kunnen besparen.
+
+# Berekening
+Door dat de formule niet 100% correct is kwam ik wat bereken problemen tegen met het gebruik van afrondingen.
+In mijn code moest ik het eind resultaat omhoog afronden
   
