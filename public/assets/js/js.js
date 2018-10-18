@@ -1,5 +1,6 @@
 function get_weight() {
   var get_weight = document.querySelectorAll('.questionHolder option:checked');
+  console.log(get_weight);
   var total_weight = 0;
 
   for (var i = 0; i < get_weight.length; i++) {
@@ -11,7 +12,6 @@ function get_weight() {
     // Math.ceil(total_weight);
     get_high_risk_factor(to_number);
   }
-  console.log(get_weight);
   get_risk(total_weight, 0);
 }
 
@@ -20,9 +20,7 @@ function get_risk(X, Y) {
 
   if (risk > 0) {
     animate_value('riskPlace', 0, risk, 1000);
-  }
-
-  else {
+  } else {
     animate_value('riskPlace', 0, 1, 1000);
   }
   return risk;
@@ -59,23 +57,23 @@ function percent_color(percent) {
   if (percent > 45) {
     risk_place.style.color = red
     riskValue.style.color = red
-    loadbar(percent,red)
+    loadbar(percent, red)
 
     riskValue.innerHTML = "High Risk"
   } else {
     risk_place.style.color = blue
     riskValue.style.color = blue
-    loadbar(percent,blue)
+    loadbar(percent, blue)
 
     riskValue.innerHTML = "Low Risk"
   }
 }
 
-function loadbar(value, color){
+function loadbar(value, color) {
   progress = document.getElementById('progress');
   progress_header = document.querySelector('#progress > span');
 
-  progress.style.height = ""+ value + "%" +"";
+  progress.style.height = "" + value + "%" + "";
   progress_header.innerHTML = value + "%";
 
   progress.style.background = color;
