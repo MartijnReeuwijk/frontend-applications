@@ -65,7 +65,7 @@ In mijn proces ga ik de volgende punten bespreken.
 * Het concept
 * Data laden
 * Interacties en vriendelijk
-* Oplossingen
+* Oplossingen en problemen
 * Leerpunten
 
 ## Het concept
@@ -118,4 +118,20 @@ Zelf vindt ik de huidige pagina nogal static en wil ik er zelf meer "leven" in b
 Dit heb ik gedaan met de  risico-counter en de risico-balk. Ook heb ik voor lichten kleuren gekozen om vriendelijker overtekomen, zeker als ze deze misschien invullen bij een client dan wil je geen donkeren inpressie geven.
 Ook heb ik een front keuze page gemaakt waar de gebruiker kan kiezen tussen verschillende versies van hulp verlening, de william schrikker groep veiligheids lijst en de Jeudghulp risico app.
 
-* Zie foto
+![riskbalk met low risk](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/risk-balk.png)
+![riskbalk met low risk](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/risk-balk-rood.png)
+
+## Oplossingen en problemen
+Tijdens het ontwikkelen ben ik een aantal kleinen problemen tegen gekomen. Hier vertel ik hoe ik deze heb opgelost.
+
+# HTML progessbar
+Voor mijn design heb ik een progress bar die de procentuele kans aangeeft om dit effect tebereiken dacht ik het element ```<progress value="0" max="100"></progress>``` tegebruiken. Helaas gaf dit niet het gewilde resultaat. De HTML progress bar kan je bijna / niet aanpassen met CSS. Hier door heb ik wat onderzoek gedaan en dat gaf aan dat je het met een ```span``` moest doen. Ik manipuleer de inline height van het element om zo het juiste resultaat tegeven.
+Zie resultaat hier onder.
+```  <div class="barHolder">
+    <div class="progressbarHolder">
+      <span id="progress" style="height:0%;"  class="progressAnime">
+        <span class="shadowBox">0%</span>
+      </span>
+    </div>
+  </div>```
+  
