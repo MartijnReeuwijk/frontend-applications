@@ -128,3 +128,14 @@ TODO:
 -   README
 -   Procesverslag
 -   Save state
+
+# Conclusie / Geleerd
+Tijdens dit project heb ik geleerd hoe je met een Framework moet werken.
+Ook heb ik wat javascripts skills kunnen bij slijpen zeker in verhouding met het framework.
+Ook heb ik wat leuke dingen kunnen doen met simpelen Css animatie.
+
+# Wat verbeteren
+-   Meer onderzoek voor ik een nieuw element gebruik.
+-   Beter benaming voor elementen.
+-   Beter gebruik maken van het framework
+-   Documentatie perdag opschrijven.
