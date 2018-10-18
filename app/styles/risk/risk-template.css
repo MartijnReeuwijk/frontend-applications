@@ -68,10 +68,24 @@ position: relative;
  font-size: 50px;
  margin: 20px;
 }
-.riskTemplate p:first-of-type{
+/* .riskTemplate p:first-of-type{
   border-bottom: solid 1px #2D4C61;
-}
+} */
 .riskMajorCauseCss{
+
+}
+#riskFactor{
+  border-bottom: solid 1px #2D4C61;
+  border-top: solid 1px #2D4C61;
+
+  color:#259E89;
+
+}
+#riskFactor:nth-of-type(2){
+  border-bottom: solid 1px #2D4C61;
+  border-top: solid 1px #2D4C61;
+
+  color:#ec3b51;
 
 }
 .secondOpinion{

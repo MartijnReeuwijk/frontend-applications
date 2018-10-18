@@ -1,5 +1,3 @@
-console.log("yeboi");
-// Maak dit functie
 function get_weight() {
   var get_weight = document.querySelectorAll('.questionHolder option:checked');
   var total_weight = 0;
@@ -13,11 +11,10 @@ function get_weight() {
     // Math.ceil(total_weight);
     get_high_risk_factor(to_number);
   }
-  console.log(total_weight);
+  console.log(get_weight);
   get_risk(total_weight, 0);
 }
 
-// get_weight();
 function get_risk(X, Y) {
   var risk = Number((1 / (1 + Math.exp(-1 * (-8.57219 + X))) * 100).toFixed(Y));
 
@@ -47,9 +44,7 @@ function animate_value(id, start, end, duration) {
     obj.innerHTML = current + "%";
     if (current == end) {
       clearInterval(timer);
-
       percent_color(current)
-
     }
 
   }, stepTime);
@@ -66,13 +61,11 @@ function percent_color(percent) {
     riskValue.style.color = red
     loadbar(percent,red)
 
-
     riskValue.innerHTML = "High Risk"
   } else {
     risk_place.style.color = blue
     riskValue.style.color = blue
     loadbar(percent,blue)
-
 
     riskValue.innerHTML = "Low Risk"
   }
@@ -87,8 +80,6 @@ function loadbar(value, color){
 
   progress.style.background = color;
   progress_header.style.color = color;
-  // console.log( );
-
 }
 
-get_weight()
+// get_weight()
