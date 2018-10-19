@@ -55,5 +55,6 @@ Make use of the many generators for code, try `ember help generate` for more det
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 ## Acknowledgments & Thanks.
-* Css-tricks for some nice animated examples and inspiration.
+* Css-tricks voor animaties en inspiratie.
 * Garage2020 Amsterdam voor de kans en het project.
+* PurpleBooth voor de Readme Template.
