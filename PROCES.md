@@ -19,6 +19,15 @@ Aan mij de taak om deze teverbeteren.
 
 Zelf heb ik er voor gekozen om de bestaande pagina niet totaal te redesignen omdat er vraag was naar bekendheid. De gebruikers zijn digibeet. Hierom heb ik dezelfde basis gehouden.
 
+## Design
+
+Het design wil ik niet veel veranderen omdat de userbase al aan dit is gewend.
+Daarom heb ik niet veel veranderd aan de basis style die er nu is.
+![Finished design](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/collage.jpg)
+Eindelijke design
+![Finished design](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/artboard-1.jpg)
+
+
 ## Dataladen
 
 We kregen de data aangeleverd in een Json file [aangeleverde data](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/json/data.json) deze moest worden uitgelezen en verwerkt. Dit heb ik met de onderstaande code gedaan.
@@ -128,3 +137,14 @@ TODO:
 -   README
 -   Procesverslag
 -   Save state
+
+# Conclusie / Geleerd
+Tijdens dit project heb ik geleerd hoe je met een Framework moet werken.
+Ook heb ik wat javascripts skills kunnen bij slijpen zeker in verhouding met het framework.
+Ook heb ik wat leuke dingen kunnen doen met simpelen Css animatie.
+
+# Wat verbeteren
+-   Meer onderzoek voor ik een nieuw element gebruik.
+-   Beter benaming voor elementen.
+-   Beter gebruik maken van het framework
+-   Documentatie perdag opschrijven.
