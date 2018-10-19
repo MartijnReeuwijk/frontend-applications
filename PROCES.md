@@ -23,9 +23,13 @@ Zelf heb ik er voor gekozen om de bestaande pagina niet totaal te redesignen omd
 
 Het design wil ik niet veel veranderen omdat de userbase al aan dit is gewend.
 Daarom heb ik niet veel veranderd aan de basis style die er nu is.
-![Finished design](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/collage.jpg)
-Eindelijke design
-![Finished design](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/artboard-1.jpg)
+# Idee design
+![Idee schetsen](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/collage.jpg)
+# Onderconstructie  design
+Deze pagina is een tijdelijke place holder.
+![Finished design](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/Artboard-2.jpg)
+# Eindelijke design
+![Finished design](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/Artboard-1.jpg)
 
 
 ## Dataladen

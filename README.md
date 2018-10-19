@@ -1,6 +1,6 @@
 # Jeugdhulp
 
-Jeugdhulp is een applicatie gemaakt voor jeugdhulp Amsterdam.
+Jeugdhulp is een applicatie gemaakt voor Garage2020 Amsterdam.
 Deze applicatie kan worden gebruikt om het kans op zware maatregelen te berekenen.
 Deze berekening zorgt er voor dat de hulpverleners beter hun clienten kunnen helpen.
 
