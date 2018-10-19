@@ -11,17 +11,17 @@ In mijn proces ga ik de volgende punten bespreken.
 ## Het concept
 
 Het idee achter de applicatie is het verbeteren van zorg door een berekening.
-Deze berekening zorgt er voor dat de hulp verleners sneller en beter kunnen helpen, en een zware maatregel kunnen voorkomen.
+Deze berekening zorgt er voor dat de hulpverleners sneller en beter kunnen helpen, en een zware maatregel kunnen voorkomen.
 De door ons meest besproken maatregel is uit huisplatsing. Dit willen de hulpverleners juist voorkomen door de psychologisch trauma die de kinderen en ouders zou overkomen.
 
-Er is al een website gemaakt door Jeudghulp die deze berekening doet, deze is alleen niet gebruiks vriendelijk.
+Er is al een website gemaakt door Jeudghulp die deze berekening doet, deze is alleen niet gebruiksvriendelijk.
 Aan mij de taak om deze teverbeteren.
 
-Zelf heb ik er voor gekozen om de bestaande pagina niet totaal te redesignen omdat er vraag was naar bekendheid. De gebruikers zijn digibeet. Hierom heb ik dezelfde basis gehouden.
+Zelf heb ik ervoor gekozen om de bestaande pagina niet totaal te redesignen omdat er vraag was naar bekendheid. De gebruikers zijn digibeet. Daarom heb ik dezelfde basis gehouden.
 
 ## Design
 
-Het design wil ik niet veel veranderen omdat de userbase al aan dit is gewend.
+Het design wil ik niet veel veranderen omdat de userbase hier al aan is gewend.
 Daarom heb ik niet veel veranderd aan de basis style die er nu is.
 # Idee design
 ![Idee schetsen](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/collage.jpg)
@@ -35,9 +35,9 @@ Deze pagina is een tijdelijke place holder.
 ## Dataladen
 
 We kregen de data aangeleverd in een Json file [aangeleverde data](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/json/data.json) deze moest worden uitgelezen en verwerkt. Dit heb ik met de onderstaande code gedaan.
-Deze code wordt in de route meegegeven zo dat de pagina gelijk de gesorteede code ontvangd en dat het framework dit gelijk goed kan verwerken.
+Deze code wordt in de route meegegeven zo dat de pagina gelijk de gesorteede code ontvangt en dat het framework dit gelijk goed kan verwerken.
 
-Dit stukje code sorteert en plaatst de Categorie aan de juisten Antwoorden. Waardoor je dit niet in je framework hoeft tedoen maar gewoon de data moet aanvragen.
+Dit stukje code sorteert en plaatst de Categorie aan de juisten Antwoorden. Waardoor je dit niet in je framework hoeft te doen maar gewoon de data moet aanvragen.
 
 ```js
 var data_prepped = [];
@@ -71,20 +71,20 @@ for (var i = 0; i < data.length; i++) {
 
 ## Interacties & vriendelijk
 
-Zelf vindt ik de huidige pagina nogal static en wil ik er zelf meer "leven" in blazen door er animaties aan toetevoegen.
-Dit heb ik gedaan met de  risico-counter en de risico-balk. Ook heb ik voor lichten kleuren gekozen om vriendelijker overtekomen, zeker als ze deze misschien invullen bij een client dan wil je geen donkeren inpressie geven.
-Ook heb ik een front keuze page gemaakt waar de gebruiker kan kiezen tussen verschillende versies van hulp verlening, de william schrikker groep veiligheids lijst en de Jeudghulp risico app.
+Zelf vind ik de huidige pagina nogal statisch en wil er meer "leven" in blazen door er animaties aan toe te voegen.
+Dit heb ik gedaan met de risico-counter en de risico-balk. Ook heb ik voor lichte kleuren gekozen om vriendelijker over te komen, zeker als ze deze misschien invullen bij een client dan wil je geen donkere inpressie geven.
+Ook heb ik een keuze pagina gemaakt waar de gebruiker kan kiezen tussen verschillende versies van hulp verlening, de William Schrikker Groep veiligheidslijst en de Jeudghulp risico app.
 
 ![riskbalk met low risk](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/risk-balk.png)
 ![riskbalk met low risk](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/risk-bar-rood.png)
 
 ## Oplossingen, problemen en TODO:
 
-Tijdens het ontwikkelen ben ik een aantal kleinen problemen tegen gekomen. Hier vertel ik hoe ik deze heb opgelost.
+Tijdens het ontwikkelen ben ik een aantal kleine problemen tegen gekomen. Hier vertel ik hoe ik deze heb opgelost.
 
 # HTML progessbar
 
-Voor mijn design heb ik een progress bar die de procentuele kans aangeeft om dit effect tebereiken dacht ik het element `<progress></progress>` tegebruiken. Helaas gaf dit niet het gewilde resultaat. De HTML progress bar kan je bijna / niet aanpassen met CSS. Hier door heb ik wat onderzoek gedaan en dat gaf aan dat je het met een `span` moest doen. Ik manipuleer de inline height van het element om zo het juiste resultaat tegeven.
+Voor mijn design heb ik een progress bar die de procentuele kans aangeeft om dit effect te bereiken dacht ik het element `<progress></progress>` te gebruiken. Helaas gaf dit niet het gewilde resultaat. De HTML progress bar kan je bijna / niet aanpassen met CSS. Hiervoor heb ik wat onderzoek gedaan en dat gaf aan dat je dit met een `span` moest doen. Ik manipuleer de inline height van het element om zo het juiste resultaat tegeven.
 Zie resultaat hier onder.
  `   <div class="barHolder">
 
@@ -96,12 +96,12 @@ Zie resultaat hier onder.
 
   </div>`
 
-Nu zie ik in dat als ik aan het begin meer onderzoek had gedaan naar het juiste element had ik hier tijd kunnen besparen.
+Nu zie ik in dat als ik aan het begin meer onderzoek had gedaan naar het juiste element, ik hier tijd had kunnen besparen.
 
 # Berekening
 
 Door dat de formule niet 100% correct is kwam ik wat bereken problemen tegen met het gebruik van afrondingen.
-In mijn code moest ik het eind resultaat omhoog afronden
+In mijn code moest ik het eind resultaat omhoog afronden. 
 
 # TODO lijst
 
@@ -144,8 +144,8 @@ TODO:
 
 # Conclusie / Geleerd
 Tijdens dit project heb ik geleerd hoe je met een Framework moet werken.
-Ook heb ik wat javascripts skills kunnen bij slijpen zeker in verhouding met het framework.
-Ook heb ik wat leuke dingen kunnen doen met simpelen Css animatie.
+Ook heb ik wat javascripts skills kunnen bijslijpen zeker in verhouding met het framework.
+Ook heb ik wat leuke dingen kunnen doen met simpele CSS animaties.
 
 # Wat verbeteren
 -   Meer onderzoek voor ik een nieuw element gebruik.
