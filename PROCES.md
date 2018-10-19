@@ -26,7 +26,7 @@ Daarom heb ik niet veel veranderd aan de basis style die er nu is.
 In mijn concept heb ik gekozen om overlayers temaken zo dat je de infomatie kan krijgen zonder de pagina teverlaten.
 Die heb ik nog niet verwerkt in mijn design omdat ik daar toch iet aantoe zou komen.
 # Kleur
-Als kleur heb ik voor zachte kleuren en vriendelijke kleuren je wil namelijk niet een negetief beeld geven met je kleur gebruik.
+Als kleur heb ik voor lichte en vriendelijke kleuren je wil namelijk niet een negetief beeld geven met je kleur gebruik.
 Ook gebruik ik Rood,Geel en groen om risico telaten zien zoals een stoplicht.
 # Idee design
 ![Idee schetsen](https://github.com/MartijnReeuwijk/techtrack/blob/master/public/assets/images/collage.jpg)
